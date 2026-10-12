@@ -12,7 +12,8 @@ cmake --build build
 
 ## Run tests
 
-GoogleTest must be installed and discoverable by CMake.
+If GoogleTest is not installed, CMake downloads the pinned GoogleTest release
+when configuring the test target.
 
 ```sh
 ctest --test-dir build --output-on-failure
